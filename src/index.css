@@ -1,13 +1,76 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bright{
+ background-color:hsl(31, 77%, 52%) ; 
+ height: 400px;
+}
+
+.dark {
+  background-color: hsl(184, 100%, 22%);
+  height: 400px;
+}
+
+.verydark{
+  background-color: hsl(179, 100%, 13%);
+  height: 400px;
+}
+
+.container {
+  margin: 40px 20px 10px;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  font-family: 'Big Shoulders Display', sans-serif;
+  margin: 20px 30px 20px;
+  color: hsl(0, 0%, 95%);
+}
+
+img{
+  display: block;
+  margin: 10px 30px 15px;
+}
+
+p{
+  width: 200px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  margin: 20px 30px 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+button{
+  margin: 80px 30px 10px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 20px;
+}
+
+
+button:hover{
+    color:hsl(0, 0%, 95%) ;
+    border:1px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+
+
+/* Desktop Style */
+
+@media screen and (min-width:800px){
+  .container{
+    
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+  }
 }
